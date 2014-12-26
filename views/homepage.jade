@@ -1,0 +1,95 @@
+extends ./layout
+
+
+block body
+  // Default home page
+  // STYLES
+  link(rel="stylesheet", href="/styles/importer.css")
+  // STYLES END
+  
+  // SCRIPTS
+  script(src="/js/dependencies/sails.io.js")
+  // SCRIPTS END
+
+  .default-page
+    .header
+      h1#main-title.container
+        | A brand new app.
+      h3.container
+        | You're looking at:
+        code
+          = view.pathFromApp + '.' + view.ext
+    .main.container.clearfix
+      //
+         <h1>Getting started</h1>
+                <p>Don't worry, we've got your back.</p>
+      ul.getting-started
+        li.clearfix
+          .step
+            .sprite.one
+            h3 Generate a REST API.
+            p
+              | Run
+              code sails generate api user
+              | .  This will create two files: a
+              a(href='http://links.sailsjs.org/docs/models') model
+              code.pocket api/models/User.js
+              | and a
+              a(href='http://links.sailsjs.org/docs/controllers') controller
+              code.pocket api/controllers/UserController.js
+              | .
+        li.clearfix
+          .step
+            .sprite.two
+            h3
+              | Lift your app.
+            p
+              | Run
+              code sails lift
+              | to start up your app server.  If you visit
+              a(target='_blank', href='http://localhost:1337/user')
+                code http://localhost:1337/user
+              | in your browser, you'll see a
+              a(href='http://links.sailsjs.org/docs/blueprints') WebSocket-compatible
+              | user API.
+        li.clearfix
+          .step
+            .sprite.three
+            h3
+              | Dive in.
+            p
+              | Blueprints are just the beginning.  You'll probably also want to learn how to customize your app's
+              a(href='http://links.sailsjs.org/docs/routes') routes
+              | , set up
+              a(href='http://links.sailsjs.org/docs/policies') security policies
+              | , configure your
+              a(href='http://links.sailsjs.org/docs/config/connections') data sources
+              | , and build custom
+              a(target='_blank', href='http://links.sailsjs.org/docs/controllers') controller actions
+              | . For more help getting started, check out the links on this page.
+            // Try adding a custom route in your <code>config/routes.js</code> file and pointing it at <code>UserController.find</code>.
+            p  
+      .links
+        // <h3>Links</h3>
+        ul.link-list
+          h4 Docs
+          a(target='_blank', href='http://sailsjs.org/#!documentation/anatomy')
+            li App Structure
+          a(target='_blank', href='http://sailsjs.org/#!documentation/reference')
+            li Reference
+          a(target='_blank', href='http://links.sailsjs.org/docs/faq')
+            li FAQ
+          a(target='_blank', href='http://sailsjs.org')
+            li Supported Databases
+          h4 Tutorials
+          a(target='_blank', href='http://links.sailsjs.org/community/sails101')
+            li Sails 101
+          h4 Community
+          a(target='_blank', href='http://stackoverflow.com/search?q=sails.js')
+            li StackOverFlow
+          a(target='_blank', href='https://github.com/balderdashy/sails')
+            li GitHub
+          a(target='_blank', href='https://groups.google.com/forum/#!forum/sailsjs')
+            li Google Group
+          a(target='_blank', href='http://webchat.freenode.net/')
+            li IRC (#sailsjs on freenode)
