@@ -12,7 +12,5 @@
  * always omit, customize, or replace this behavior with SASS, SCSS,
  * or any other Grunt tasks you like.)
  */
-body {
-  font: 100% Helvetica, sans-serif;
-  color: #000; 
-}
+@import "bootstrap";
+@import "main/main";
