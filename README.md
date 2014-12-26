@@ -1,8 +1,25 @@
-# sails-new-starter-toolkit
+# Zuru - Main website
 
-a [Sails](http://sailsjs.org) application starter toolkit
+Zuru main website
+
+## pre-install
+
+ * node.js
+ * npm
+ * sass
+ * compass
+ * bootstrap
+ * sails.js@0.11.0rc
+
+## how to start
+
+```
+sails lift
+open http://localhost:1337
+```
 
 ##include
+
  * jade
  * sass config
  * include compass
@@ -10,7 +27,4 @@ a [Sails](http://sailsjs.org) application starter toolkit
 
 #TODO
 
-next version support items,
-
- * coffeescript
- * gulp support
+ * photo as cover backgound
