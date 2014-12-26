@@ -1,7 +1,9 @@
 module.exports = function(grunt) {
-
     grunt.config.set('sass', {
         dev: {
+            options: {
+                compass: true
+            },
             files: [{
                 expand: true,
                 cwd: 'assets/styles/',
