@@ -4,12 +4,13 @@ Sails.js starter, collection for most usage library.
 
 ## pre-install
 
- * node.js
+ * node.js@0.10.26
  * npm
- * sass
- * compass
- * bootstrap
- * sails.js@0.11.0rc
+ * [coffeescript](http://coffeescript.org/)
+ * [sass](http://sass-lang.com/install)
+ * [compass](http://compass-style.org/install/)
+ * [bootstrap](https://github.com/twbs/bootstrap-sass)
+ * [sails.js@0.11.0rc](http://sailsjs.org/)
 
 ## how to start
 
