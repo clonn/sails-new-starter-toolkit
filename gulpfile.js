@@ -4,16 +4,16 @@ var compass = require('gulp-compass');
 
 gulp.task('default', function() {
   // place code for your default task here
-  gulp.src('./assets/**/*.scss')
-  .pipe(watch('./assets/**/*.scss'))
+  gulp.src('assets/styles/importer.scss')
+  .pipe(watch('./assets/styles/**/*.scss'))
   .pipe (compass({
+    config_file: './config.rb',
     sass: './assets/styles/',
     css: '.tmp/public/styles/'
   }))
   .on('error', function(error) {
       // Would like to catch the error here
     console.log(error);
-    this.emit('end');
   })
-  .pipe(gulp.dest('./.tmp/public/'));
+  .pipe(gulp.dest('./.tmp/public/styles/'));
 });
