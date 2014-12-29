@@ -1,6 +1,6 @@
-# Zuru - Main website
+# Starter - Sails.js coffee
 
-Zuru main website
+Sails.js starter, collection for most usage library.
 
 ## pre-install
 
@@ -14,17 +14,20 @@ Zuru main website
 ## how to start
 
 ```
-sails lift
+npm i && coffee app.coffee
 open http://localhost:1337
 ```
 
 ##include
 
  * jade
+ * coffeescript support
  * sass config
  * include compass
  * include bootstrap (sass)
 
 #TODO
 
- * photo as cover backgound
+ * bootstrap build in
+ * collect sample page for sass, jade, coffee
+

@@ -1,7 +1,7 @@
 {
   "name": "sails-new-starter-toolkit",
   "private": true,
-  "version": "0.0.1",
+  "version": "0.1.0",
   "description": "a Sails application starter toolkit",
   "keywords": [],
   "dependencies": {
