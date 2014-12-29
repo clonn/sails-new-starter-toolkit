@@ -26,7 +26,7 @@
     "grunt-contrib-sass": "^0.8.1"
   },
   "scripts": {
-    "start": "node app.js",
+    "start": "coffee app.coffee",
     "debug": "node debug app.js"
   },
   "main": "app.js",
@@ -35,5 +35,10 @@
     "url": "git://github.com/caesarchi/main-site.git"
   },
   "author": "caesarchi",
-  "license": ""
+  "license": "",
+  "devDependencies": {
+    "gulp": "^3.8.10",
+    "gulp-watch": "^3.0.0",
+    "gulp-compass": "^2.0.3"
+  }
 }
