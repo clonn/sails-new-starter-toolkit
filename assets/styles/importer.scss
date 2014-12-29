@@ -12,5 +12,6 @@
  * always omit, customize, or replace this behavior with SASS, SCSS,
  * or any other Grunt tasks you like.)
  */
+@import "compass/reset";
 @import "bootstrap";
 @import "./main/landing";

@@ -1,7 +1,39 @@
-body {
-  font: 100% Helvetica, sans-serif;
-  color: #000; 
-}
 h1 {
   color: #f00;
+}
+.bs-docs-masthead {
+  height: 50vh;
+  background-color: #000;
+}
+.bs-docs-masthead .bs-docs-booticon {
+  margin: 50px auto 30px;
+}
+
+
+.bs-docs-booticon-outline {
+  background-color: transparent;
+  border: 1px solid #cdbfe3;
+}
+
+.bs-docs-booticon-lg {
+  width: 144px;
+  height: 144px;
+  font-size: 108px;
+  line-height: 140px;
+}
+
+.bs-docs-booticon {
+  display: block;
+  font-weight: 500;
+  color: #fff;
+  text-align: center;
+  cursor: default;
+  // background-color: #563d7c;
+  border-radius: 15%;
+}
+
+.bs-docs-masthead .lead {
+  margin: 0 auto 30px;
+  font-size: 20px;
+  color: #fff;
 }
