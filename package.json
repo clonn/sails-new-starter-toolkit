@@ -37,6 +37,7 @@
     "watch:compass": "compass watch",
     "watch:livereload": "live-reload --port 9091 .tmp/public/",
     "watch:coffee": "coffee -cwo ./.tmp/public/js ./assets/js/app",
+    "copy": "cp --parents ./assets/js/dependencies/*.js ./.tmp/public/js/dependencies/*.js",
     "debug": "node debug app.js"
   },
   "main": "app.js",
