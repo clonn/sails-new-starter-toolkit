@@ -1,4 +1,4 @@
-###*
+###
 Gruntfile
 
 This Node script is executed when you run `grunt` or `sails lift`.
@@ -12,11 +12,10 @@ Unless you know what you're doing, you shouldn't change this file.
 Check out the `tasks` directory instead.
 ###
 module.exports = (grunt) ->
-  
   # Load the include-all library in order to require all of our grunt
   # configurations and task registrations dynamically.
-  
-  ###*
+
+  ###
   Loads Grunt configuration modules from the specified
   relative path. These modules should export a function
   that, when run, should either load/configure or register
@@ -25,10 +24,10 @@ module.exports = (grunt) ->
   loadTasks = (relPath) ->
     includeAll(
       dirname: require("path").resolve(__dirname, relPath)
-      filter: /(.+)\.js$/
+      filter: /(.+)\.coffee$/
     ) or {}
-  
-  ###*
+
+  ###
   Invokes the function from a Grunt configuration module with
   a single argument - the `grunt` object.
   ###
@@ -50,14 +49,18 @@ module.exports = (grunt) ->
       console.error()
       grunt.registerTask "default", []
       return
+
+  # Load task functions
   taskConfigurations = loadTasks("./tasks/config")
   registerDefinitions = loadTasks("./tasks/register")
-  
+  console.log registerDefinitions
+  # (ensure that a default task exists)
   unless registerDefinitions.default
     registerDefinitions.default = (grunt) ->
       grunt.registerTask('default', [])
-  
+
+
   # Run task functions to configure Grunt.
   invokeConfigFn taskConfigurations
   invokeConfigFn registerDefinitions
-  return
+  grunt.loadNpmTasks "sails-migrations"
