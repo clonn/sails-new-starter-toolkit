@@ -53,7 +53,6 @@ module.exports = (grunt) ->
   # Load task functions
   taskConfigurations = loadTasks("./tasks/config")
   registerDefinitions = loadTasks("./tasks/register")
-  console.log registerDefinitions
   # (ensure that a default task exists)
   unless registerDefinitions.default
     registerDefinitions.default = (grunt) ->
