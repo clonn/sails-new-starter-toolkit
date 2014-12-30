@@ -36,7 +36,7 @@
     "watch": "parallelshell 'npm run watch:compass' 'npm run watch:livereload' 'npm run watch:coffee'",
     "watch:compass": "compass watch",
     "watch:livereload": "live-reload --port 9091 .tmp/public/",
-    "watch:coffee": "coffee -cwo ./.tmp/public/js ./assets/js/app",
+    "watch:coffee": "coffee -cwo ./.tmp/public/js ./assets/js/",
     "copy": "cp --parents ./assets/js/dependencies/*.js ./.tmp/public/js/dependencies/*.js",
     "debug": "node debug app.js"
   },
