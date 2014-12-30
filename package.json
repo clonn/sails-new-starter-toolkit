@@ -2,7 +2,13 @@
   "name": "sails-new-starter-toolkit",
   "version": "0.1.0",
   "description": "a Sails application starter toolkit",
-  "keywords": ["sails.js", "coffeescript", "jade", "coffee", "sass"],
+  "keywords": [
+    "sails.js",
+    "coffeescript",
+    "jade",
+    "coffee",
+    "sass"
+  ],
   "dependencies": {
     "sails": "~0.11.0-rc4",
     "sails-disk": "~0.10.0",
@@ -27,8 +33,9 @@
   "scripts": {
     "start": "coffee app.coffee",
     "build": "compass compile",
-    "watch": "npm run compass-watch",
-    "compass-watch": "compass watch",
+    "watch": "parallelshell 'npm run watch:compass' 'npm run watch:livereload'",
+    "watch:compass": "compass watch",
+    "watch:livereload": "live-reload --port 9091 .tmp/public/",
     "debug": "node debug app.js"
   },
   "main": "app.js",
@@ -39,5 +46,7 @@
   "author": "clonn(a.k.a, CaesarChi)",
   "license": "MIT",
   "devDependencies": {
+    "live-reload": "latest",
+    "parallelshell": "^1.0.3"
   }
 }
