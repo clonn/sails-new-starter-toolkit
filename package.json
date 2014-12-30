@@ -1,9 +1,8 @@
 {
   "name": "sails-new-starter-toolkit",
-  "private": true,
   "version": "0.1.0",
   "description": "a Sails application starter toolkit",
-  "keywords": [],
+  "keywords": ["sails.js", "coffeescript", "jade", "coffee", "sass"],
   "dependencies": {
     "sails": "~0.11.0-rc4",
     "sails-disk": "~0.10.0",
@@ -27,6 +26,9 @@
   },
   "scripts": {
     "start": "coffee app.coffee",
+    "build": "compass compile",
+    "watch": "npm run compass-watch",
+    "compass-watch": "compass watch",
     "debug": "node debug app.js"
   },
   "main": "app.js",
@@ -34,11 +36,8 @@
     "type": "git",
     "url": "git://github.com/caesarchi/main-site.git"
   },
-  "author": "caesarchi",
-  "license": "",
+  "author": "clonn(a.k.a, CaesarChi)",
+  "license": "MIT",
   "devDependencies": {
-    "gulp": "^3.8.10",
-    "gulp-watch": "^3.0.0",
-    "gulp-compass": "^2.0.3"
   }
 }
