@@ -26,7 +26,7 @@ entirely and leave all your settings in env/production.js
 For more information, check out:
 http://sailsjs.org/#/documentation/reference/sails.config/sails.config.local.html
 ###
-module.exports = {}
+module.exports =
 
 ###*
 Your SSL certificate and key, if you want to be able to serve HTTP      *
@@ -59,7 +59,7 @@ In env/production.js, you'll probably want to change this setting       *
 to 80 (http://) or 443 (https://) if you have an SSL certificate        *
 ###
 
-# port: process.env.PORT || 1337,
+  port: process.env.PORT || 1337,
 
 ###*
 The runtime "environment" of your Sails app is either typically         *
@@ -79,4 +79,4 @@ variable.  If NODE_ENV is not set, Sails will run in the                *
 'development' environment.                                              *
 ###
 
-# environment: process.env.NODE_ENV || 'development'
+  environment: process.env.NODE_ENV || 'development'
