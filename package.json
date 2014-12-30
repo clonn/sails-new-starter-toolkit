@@ -33,9 +33,10 @@
   "scripts": {
     "start": "coffee app.coffee",
     "build": "compass compile",
-    "watch": "parallelshell 'npm run watch:compass' 'npm run watch:livereload'",
+    "watch": "parallelshell 'npm run watch:compass' 'npm run watch:livereload' 'npm run watch:coffee'",
     "watch:compass": "compass watch",
     "watch:livereload": "live-reload --port 9091 .tmp/public/",
+    "watch:coffee": "coffee -cwo ./.tmp/public/js ./assets/js/app",
     "debug": "node debug app.js"
   },
   "main": "app.js",
