@@ -19,6 +19,7 @@ cssFilesToInject = ["styles/**/*.css"]
 jsFilesToInject = [
   
   # Load sails.io before everything else
+  "bower/**/*.js"
   "js/dependencies/sails.io.js"
   
   # Dependencies like jQuery, or Angular are brought in here
