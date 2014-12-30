@@ -2,6 +2,8 @@
 
 Sails.js starter, collection for most usage library.
 
+We use [NPM-script](https://docs.npmjs.com/misc/scripts) instead of [gulp](http://gulpjs.com/).
+
 ## pre-install
 
  * node.js@0.10.26
@@ -15,8 +17,20 @@ Sails.js starter, collection for most usage library.
 ## how to start
 
 ```
-npm i && coffee app.coffee
+npm start
 open http://localhost:1337
+```
+
+## build project
+
+```
+npm run build
+```
+
+## watch project
+
+```
+npm run watch
 ```
 
 ##include
