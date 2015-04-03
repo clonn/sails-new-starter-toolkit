@@ -35,7 +35,7 @@ process.chdir __dirname
     console.error "When you run `sails lift`, your app will still use a local `./node_modules/sails` dependency if it exists,"
     console.error "but if it doesn't, the app will run with the global sails instead!"
     return
-  
+
   # Try to get `rc` dependency
   rc = undefined
   try
@@ -50,7 +50,7 @@ process.chdir __dirname
       console.error "npm install rc --save"
       rc = ->
         {}
-  
+
   # Start server
   sails.lift rc("sails")
   return
