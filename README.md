@@ -6,13 +6,14 @@ We use [NPM-script](https://docs.npmjs.com/misc/scripts) instead of [gulp](http:
 
 ## pre-install
 
- * node.js@00.12.0 / io.js@1.2.0
+ * node.js@0.10.26
  * npm
  * [coffeescript](http://coffeescript.org/)
  * [sass](http://sass-lang.com/install)
  * [compass](http://compass-style.org/install/)
  * [bootstrap](https://github.com/twbs/bootstrap-sass)
- * [sails.js@0.11.0](http://sailsjs.org/)
+ * [grunt](http://gruntjs.com/)
+ * [sails.js@0.11.0rc](http://sailsjs.org/)
 
 ## how to start
 
@@ -21,7 +22,7 @@ npm start
 open http://localhost:1337
 ```
 
-## build project
+## before init project
 
 ```
 npm run build
@@ -33,6 +34,12 @@ npm run build
 npm run watch
 ```
 
+or
+
+```
+grunt watch
+```
+
 ##include
 
  * jade
@@ -40,17 +47,9 @@ npm run watch
  * sass config
  * include compass
  * include bootstrap (sass)
- * already have sample page
 
-## changelog
+#TODO
 
-### 20150212
- 
- * upgrade sails@0.11.0
- * upgrade sails dependencies modules
-
-##TODO
-
- * for mobile app
-
+ * bootstrap build in
+ * collect sample page for sass, jade, coffee
 
