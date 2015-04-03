@@ -1,5 +1,5 @@
-describe.only "basic url test", (done) ->
-  it "test root url / ", (done) ->
+describe.only "about Auth", (done) ->
+  it "execute login by id", (done) ->
 
     request(sails.hooks.http.app)
     .get("/")
