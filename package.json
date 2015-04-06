@@ -11,9 +11,10 @@
   ],
   "dependencies": {
     "bcryptjs": "^2.1.0",
-    "coffee-script": "^1.8.0",
+    "coffee-script": "^1.9.1",
     "ejs": "~0.8.4",
     "grunt": "0.4.2",
+    "grunt-cli": "^0.1.13",
     "grunt-contrib-clean": "~0.5.0",
     "grunt-contrib-coffee": "~0.10.1",
     "grunt-contrib-concat": "~0.3.0",
@@ -43,6 +44,7 @@
   "scripts": {
     "start": "node_modules/.bin/coffee app.coffee",
     "build": "compass compile && node_modules/.bin/grunt",
+    "deploy": "git checkout production && grunt && git add . && git commit -m 'deploy' && git push heroku production:master -f",
     "watch": "parallelshell 'npm run watch:compass' 'npm run watch:livereload' 'npm run watch:coffee'",
     "watch:compass": "compass watch",
     "watch:livereload": "live-reload --port 9091 .tmp/public/",
@@ -65,9 +67,7 @@
     "grunt-cli": "^0.1.13",
     "live-reload": "latest",
     "parallelshell": "^1.0.3",
-    "live-reload": "latest",
     "nock": "^1.4.0",
-    "parallelshell": "^1.0.3",
     "supertest": "^0.15.0"
   }
 }
